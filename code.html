@@ -105,7 +105,19 @@
             <div class="col-lg-4">
                 <p>The code is structured in three functions.</p>
                 <h5>Reversed</h5>
-                <p></p>
+                <p>The function <strong>getString</strong> declares the other two functions reverseString and displayString
+                so the functions can be passed through and called on later. This function also allows us to receive what the user entered as a string.
+                By adding "invisible" to the classList, we can make the alert unseen until displayString is called.</p>
+                
+                <p>The function <strong>reverseString</strong> takes the userString and puts it into an array. A for loop is used to reverse the string by 
+                beginning at the end of the userString and decrementing each time the loop goes through until the index of 0 is reached in the array. By
+                returning revString, we have the string reversed.
+                </p>
+
+                <p>The function <strong>displayString</strong> takes the returned string that was reversed and displays it to the page using the 
+                document.getElementById. The "msg" id that the document finds allows the message of the string being reversed to be displayed on the page.
+                The "alert" id that the document finds shows the alert message which was hidden earlier in the function getString. By removing invisible from the classList, the string 
+                now displays the reversed string.</p>
             </div>
         </div>
      </div>
